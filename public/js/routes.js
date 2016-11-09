@@ -6,6 +6,11 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'mainController',
             controllerAs: 'vm'
         })
+        .when('/camera', {
+            templateUrl: 'views/camera.html',
+            controller: 'moustacheController',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         })
