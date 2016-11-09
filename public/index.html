@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app='app'>
+<html lang="en" ng-app='app'ng-app="ngMap">
     <head>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
         <link rel="shortcut icon" href="assets/img/logo.png">
 
         <title>Fan{tache}tic</title>
-
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
+
 
     </head>
     <body>
@@ -23,17 +25,18 @@
         </div>
 
         <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script src="script-tags-for-development.js"></script>
+
         <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <script src="vendor/angular/angular.min.js"></script>
         <script src="vendor/angular-route/angular-route.min.js"></script>
 
         <script src="js/services/todoService.js"></script>
-        <script src="js/services/moustacheService.js"></script>
 
         <script src="js/controllers/navbarController.js"></script>
         <script src="js/controllers/mainController.js"></script>
-        <script src="js/controllers/moustacheController.js"></script>
 
         <script src="js/directives/navbarFix.js"></script>
         <script src="js/routes.js"></script>
