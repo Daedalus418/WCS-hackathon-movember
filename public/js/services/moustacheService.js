@@ -1,4 +1,4 @@
-class moustacheervice {
+class moustacheService {
 
     constructor($http) {
         this.$http = $http;
