@@ -5,7 +5,7 @@ class mainController {
         this.load();
     }
 
-    var myApp = angular.module('myApp', ['ngMap']);
+    angular.module('app', ['ngMap']);
 
     app.controller('MyController', function(NgMap) {
     NgMap.getMap().then(function(map) {
