@@ -5,9 +5,12 @@ class moustacheController {
         this.moustacheService = moustacheService;
         this.load();
 
-        function () {
-          var takePicture = document.querySelector("#take-picture"),
-          showPicture = document.querySelector("#show-picture");
+    function () {
+
+
+
+        var takePicture = document.querySelector("#take-picture"),
+            showPicture = document.querySelector("#show-picture");
 
           if (takePicture && showPicture) {
             // Set events
