@@ -1,38 +1,37 @@
 class mainController {
 
-    constructor(todoService) {
+    constructor(todoService, NgMap, $interval) {
         this.todoService = todoService;
         this.load();
+
+
+
+        NgMap.getMap().then(function(map) {
+            console.log(map.getCenter());
+            console.log('markers', map.markers);
+            console.log('shapes', map.shapes);
+        });
+
+        var vm = this;
+        vm.positions = [
+            [48.47, 1.00],
+            [48.48, 1.01],
+            [48.49, 1.02],
+            [48.50, 1.03],
+            [48.51, 1.04]
+        ];
+
+        $interval(function() {
+            var numMarkers = Math.floor(Math.random() * 4) + 4; //between 4 to 8 markers
+            vm.positions = [];
+            for (let i = 0; i < numMarkers; i++) {
+                var lat = 48.47 + (Math.random() / 100);
+                var lng = 1.00 + (Math.random() / 100);
+                vm.positions.push([lat, lng]);
+            }
+        }, 2000);
+
     }
-
-    angular.module('app', ['ngMap']);
-
-    app.controller('MyController', function(NgMap) {
-    NgMap.getMap().then(function(map) {
-      console.log(map.getCenter());
-      console.log('markers', map.markers);
-      console.log('shapes', map.shapes);
-    });
-  });
-
-  app.controller('mapController', function($interval) {
-  var vm = this;
-  vm.positions =[
-    [40.71, -74.21], [40.72, -74.20], [40.73, -74.19], [40.74, -74.18],
-    [40.75, -74.17], [40.76, -74.16], [40.77, -74.15], [40.77, -74.15]
-  ];
-
-  $interval(function() {
-    var numMarkers = Math.floor(Math.random() * 4) + 4; //between 4 to 8 markers
-    vm.positions = [];
-    for (i = 0; i < numMarkers; i++) {
-      var lat = 40.71 + (Math.random() / 100);
-      var lng = -74.21 + (Math.random() / 100);
-      vm.positions.push([lat, lng]);
-    }
-  }, 2000);
-});
-
     load() {
         this.todoService.getAll().then((res) => {
             this.todos = res.data;
