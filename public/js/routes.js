@@ -15,6 +15,10 @@ const routes = ($routeProvider, $httpProvider) => {
             templateUrl: 'views/newsletter.html',
             controller: 'mainController',
         })
+        .when('/event', {
+            templateUrl: 'views/event.html',
+            controller: 'mainController',
+        })
         .otherwise({
             redirectTo: '/'
         })

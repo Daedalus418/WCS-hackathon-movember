@@ -7,9 +7,6 @@ class moustacheController {
     }
 
     function () {
-
-
-      
         var takePicture = document.querySelector("#take-picture"),
             showPicture = document.querySelector("#show-picture");
 
