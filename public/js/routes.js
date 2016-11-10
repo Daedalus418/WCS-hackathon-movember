@@ -11,6 +11,10 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'moustacheController',
             controllerAs: 'vm'
         })
+        .when('/newsletter', {
+            templateUrl: 'views/newsletter.html',
+            controller: 'mainController',
+        })
         .otherwise({
             redirectTo: '/'
         })
