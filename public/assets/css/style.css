@@ -60,3 +60,23 @@ p{
 	color: #64B5F6;
 	font-size: 1.0em;
 }
+/* PAGE main*/
+.carousel-cell{
+	width: 100vw;
+	height: 100vh;
+}
+ng-map{
+	width: 100vw;
+	height: 100vh;
+}
+#position {
+    display: flex;
+    justify-content: flex-end;
+}
+#text {
+  background-color:#bdbdbd;
+  border:#bdbdbd 2px;
+  border-radius: 5%;
+  text-align:center;
+  font-size:30px
+  }
