@@ -10,6 +10,7 @@ class navbarController {
           }, speed); // Go
           return false;
       });
+
   }
 
 }

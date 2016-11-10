@@ -1,5 +1,6 @@
-<ng-map default-style="true" center="current-location" zoom="6">
-    <info-window position="current-location">
-        <span>Loation found using HTML5.</span>
-    </info-window>
-</ng-map>
+
+<div ng-controller="mapController as vm">
+    <ng-map zoom="14" center="[48.47, 1.00]">
+      <marker ng-repeat="p in vm.positions" position="{{p}}"></marker>
+    </ng-map>
+  </div>
