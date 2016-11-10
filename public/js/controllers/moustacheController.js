@@ -5,7 +5,7 @@ class moustacheController {
         this.moustacheService = moustacheService;
         this.load();
 
-        function toto() {
+        function () {
           var takePicture = document.querySelector("#take-picture"),
           showPicture = document.querySelector("#show-picture");
 
