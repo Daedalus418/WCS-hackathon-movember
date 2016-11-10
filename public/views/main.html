@@ -42,8 +42,29 @@
         </div>
     </div>
 </div>
-<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+<div>
+    <div class="row">
+        <div class="col s3 waves-effect waves-light btn" id="position" style="text-align:center">
+            <input type="text" ng-model="vm.banane" size="3" readonly="true">
+            <input type="button" value="+1" ng-click="vm.modifier(1)">
+        </div>
+        <div class="col s3">
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="InfoWebMaster">Tweet</a>
+        </div>
+        <div class="col s3">
+            <iframe
+                src="http://www.facebook.com/plugins/like.php?href=http://www.example.com/page.html&layout=box_count&show_faces=true&width=65&action=like&font=arial&colorscheme=light&height=65"
+                scrolling="no"
+                frameborder="0"
+                style="border:none; overflow:hidden; width:65px; height:65px; margin-top:3px;"
+                allowTransparency="true"></iframe>
+        </div>
+        <div class="col s3">
+            <a name="fb_share" type="box_count" share_url="http://www.example.com/page.html"></a>
+        </div>
+    </div>
+</div>
 
-<ng-map zoom="14" center="[40.71, -74.21]">
-  <marker ng-repeat="p in vm.positions" position="{{p}}"></marker>
+<ng-map zoom="14" center="[48.51, 1.04]">
+    <marker ng-repeat="p in vm.positions" position="{{p}}"></marker>
 </ng-map>

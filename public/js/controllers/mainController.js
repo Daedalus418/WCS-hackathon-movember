@@ -35,7 +35,10 @@ class mainController {
                 vm.positions.push([lat, lng]);
             }
         }, 2000);*/
-
+        this.banane = 0;
+    }
+    modifier (incremente) {
+      this.banane = Number(this.banane)+1
     }
     load() {
         this.todoService.getAll().then((res) => {

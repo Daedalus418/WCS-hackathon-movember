@@ -5,4 +5,18 @@
 		font: 14px Helvetica,Arial,sans-serif;
 }
 
+/*Google map*/
 map, div[map] {display:block; width:600px; height:400px;}
+
+/*Bouton*/
+#text {
+  background-color:#bdbdbd;
+  border:#bdbdbd 2px;
+  border-radius: 5%;
+  text-align:center;
+  font-size:30px
+  }
+#position {
+	display: flex;
+	justify-content: flex-end;
+}
