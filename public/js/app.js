@@ -1,4 +1,4 @@
-angular.module('app', ['ngRoute'])
+angular.module('app', ['ngRoute', 'ngMap'])
         .service('todoService', todoService)
         .service('moustacheService', moustacheService)
         .controller('mainController', mainController)

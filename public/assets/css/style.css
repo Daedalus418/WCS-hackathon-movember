@@ -4,3 +4,5 @@
 		clear: left;
 		font: 14px Helvetica,Arial,sans-serif;
 }
+
+map, div[map] {display:block; width:600px; height:400px;}
