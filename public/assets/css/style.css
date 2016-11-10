@@ -6,3 +6,57 @@
 }
 
 map, div[map] {display:block; width:600px; height:400px;}
+
+body, #mc_embed_signup{
+	background-color: #E6EBF6;
+	font-family: 'Proza Libre', sans-serif;
+}
+
+/* navbar*/
+.titre{
+		font-family: 'Arbutus Slab', serif;
+		font-weight: bold;
+		font-size: 3em!important;
+}
+.side-nav li a {
+	color: white;
+}
+/*page concours*/
+.card-image, .card-content, .card-action{
+	background-color: #A0CAEA;
+	text-align: center;
+	color:white;
+}
+.card-content{
+	text-align: justify;
+}
+.card-content p a{
+ color: white
+}
+.card-action{
+	font-size: 1.8em;
+	font-family: 'Arbutus Slab', serif;
+	font-weight: bold;
+}
+/* PAGE NEWSLETTER*/
+h2{
+	text-align: center;
+	font-size: 1.8em;
+	color: #64B5F6;
+}
+.indicates-required {
+	color: #64B5F6!important;
+}
+label, span{
+	color: #64B5F6! important;
+}
+/* PAGE camera*/
+h1{
+	text-align: center;
+	color: #64B5F6
+}
+p{
+	text-align: center;
+	color: #64B5F6;
+	font-size: 1.0em;
+}
