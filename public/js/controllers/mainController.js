@@ -19,14 +19,14 @@ class mainController {
 
         var vm = this;
         vm.positions = [
-            [48.47, 1.00],
-            [48.48, 1.01],
-            [48.49, 1.02],
-            [48.50, 1.03],
+            [48.57, 1.05],
+            [48.50, 1.01],
+            [48.53, 1.08],
+            [48.55, 1.00],
             [48.51, 1.04]
         ];
 
-        $interval(function() {
+        /*$interval(function() {
             var numMarkers = Math.floor(Math.random() * 4) + 4; //between 4 to 8 markers
             vm.positions = [];
             for (let i = 0; i < numMarkers; i++) {
@@ -34,7 +34,7 @@ class mainController {
                 var lng = 1.00 + (Math.random() / 100);
                 vm.positions.push([lat, lng]);
             }
-        }, 2000);
+        }, 2000);*/
 
     }
     load() {
