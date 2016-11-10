@@ -12,6 +12,7 @@
         <title>Fan{tache}tic</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="assets/css/style.css">
 
 
@@ -20,13 +21,13 @@
 
         <ng-include src="'views/navbar.html'"></ng-include>
 
-        <div class="container">
+        <!-- <div class="container"> -->
             <ng-view></ng-view>
-        </div>
+        <!-- </div> -->
 
         <script src="vendor/jquery/dist/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-        <script src="script-tags-for-development.js"></script>
+        <!-- <script src="script-tags-for-development.js"></script> -->
 
         <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -34,9 +35,11 @@
         <script src="vendor/angular-route/angular-route.min.js"></script>
 
         <script src="js/services/todoService.js"></script>
+        <script src="js/services/moustacheService.js"></script>
 
         <script src="js/controllers/navbarController.js"></script>
         <script src="js/controllers/mainController.js"></script>
+        <script src="js/controllers/moustacheController.js"></script>
 
         <script src="js/directives/navbarFix.js"></script>
         <script src="js/routes.js"></script>
